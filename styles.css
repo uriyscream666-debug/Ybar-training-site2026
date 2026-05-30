@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background: #1e1b17;  /* чёрно-коричневый фон */
+    background: #1e1b17;
     color: #ece8df;
     padding: 24px 20px;
 }
@@ -16,17 +16,16 @@ body {
     margin: 0 auto;
 }
 
-/* Шапка */
 header {
     text-align: center;
     margin-bottom: 32px;
-    border-bottom: 2px solid #6b8c5c; /* зелёный */
+    border-bottom: 2px solid #6b8c5c;
     padding-bottom: 20px;
 }
 header h1 {
     font-size: 2.6rem;
     font-weight: 700;
-    color: #d9b48b; /* коричнево-золотой */
+    color: #d9b48b;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 header p {
@@ -45,7 +44,6 @@ header p {
     border: 1px solid #6b8c5c;
 }
 
-/* Вкладки */
 .tabs {
     display: flex;
     justify-content: center;
@@ -78,7 +76,6 @@ header p {
     display: block;
 }
 
-/* Категории */
 .categories {
     display: flex;
     flex-wrap: wrap;
@@ -105,12 +102,11 @@ header p {
     color: #1e1b17;
 }
 .cat-btn.active {
-    background: #b94b4b; /* красный акцент */
+    background: #b94b4b;
     border-color: #b94b4b;
     color: white;
 }
 
-/* Сетка карточек */
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
@@ -180,7 +176,6 @@ header p {
     padding-top: 8px;
 }
 
-/* Модальное окно – теперь с отдельным блоком сторителлинга */
 .modal {
     display: none;
     position: fixed;
@@ -226,8 +221,6 @@ header p {
 }
 .modal-section strong {
     color: #6b8c5c;
-    display: inline-block;
-    width: 110px;
 }
 .story-block {
     background: #2c2a26;
@@ -257,7 +250,6 @@ header p {
     font-size: 0.9rem;
 }
 
-/* Тест */
 .quiz-container {
     background: #25221e;
     border-radius: 40px;
