@@ -3,23 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Учебный портал официанта | Барная карта и меню</title>
+    <title>Барная карта «Ямская» — обучение официантов</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="app">
         <header>
-            <h1>🍸 Учебный портал официанта</h1>
-            <p>Трактир / Шахерезада • Ямская слобода • Лето 2026</p>
-            <div class="badge">Для внутреннего обучения персонала</div>
+            <h1>🍸 Барная карта «Ямская»</h1>
+            <p>Трактир / Шахерезада • Лето 2026 • Учебный портал официанта</p>
+            <div class="badge">славянский колорит 🌾</div>
         </header>
 
-        <nav class="categories" id="categoriesNav"></nav>
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="menu">📜 Меню бара</button>
+            <button class="tab-btn" data-tab="quiz">🎓 Тест на официанта (с юмором)</button>
+        </div>
 
-        <main class="menu-grid" id="menuGrid">
-            <p>Загрузка меню...</p>
-        </main>
+        <div id="menuTab" class="tab-content active">
+            <nav class="categories" id="categoriesNav"></nav>
+            <main class="menu-grid" id="menuGrid">
+                <p>Загрузка меню...</p>
+            </main>
+        </div>
+
+        <div id="quizTab" class="tab-content">
+            <div class="quiz-container">
+                <h2>🧠 Экзамен для настоящего бармена</h2>
+                <p class="quiz-intro">40 вопросов с подколами и реальными знаниями. Отвечай честно, шеф подглядывает 👀</p>
+                <div id="quizQuestions"></div>
+                <button id="submitQuiz" class="btn-gold">📊 Узнать результат</button>
+                <div id="quizResult" class="quiz-result"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 id="modalTitle"></h3>
+            <div id="modalDescription" style="white-space: pre-wrap; line-height:1.5;"></div>
+            <div id="modalExtra"></div>
+        </div>
     </div>
 
     <script src="full_menu.js"></script>
